@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/mine_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的快方"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/setUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/my_setup"
+        android:layout_alignTop="@id/mine_my"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/my_toppic">
+
+            <TextView
+                android:id="@+id/mine_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_frame"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="注册/登录"
+                android:textColor="@color/white" 
+                android:layout_marginTop="70dp"/>
+            
+
+        </LinearLayout>
+        
+        
+        
+        
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<TextView
+   	    android:id="@+id/good_detail_instruction_name"
+   	    android:layout_width="wrap_content"                	 
+   	    android:layout_height="wrap_content"
+   	    android:text="【成  分】"                	    
+   	    android:layout_marginTop="5dp"
+   	    android:layout_marginLeft="5dp"
+   	    android:textColor="@color/gray"/>
+   	<TextView
+   	    android:id="@+id/good_detail_instruction_detail"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_toRightOf="@id/good_detail_instruction_name"
+   	    android:layout_alignTop="@id/good_detail_instruction_name"
+   	    android:layout_marginLeft="5dp"
+   	    android:text="三叉苦"
+   	    android:textColor="@color/gray"/>       
+</RelativeLayout>

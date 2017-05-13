@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">kuaifang_v1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_special_active">SpecialActiveActivity</string>
+    <string name="title_activity_family_store">FamilyStoreActivity</string>
+    <string name="title_activity_family">FamilyActivity</string>
+    <string name="title_activity_reduce_weight">ReduceWeightActivity</string>
+    <string name="title_activity_good_details">GoodDetailsActivity</string>
+    <string name="title_activity_confirm_orders">ConfirmOrdersActivity</string>
+    <string name="title_activity_order_of_wait_to_pay">OrderOfWaitToPayActivity</string>
+</resources>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youzhao.kuaifang.WelcomeActivity" >
+
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/welcomePager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/>
+	<LinearLayout
+	    android:id="@+id/welcome_dots"
+	    android:layout_width="wrap_content"
+	    android:layout_height="20dp"
+	    android:orientation="horizontal"
+	    android:layout_marginBottom="50dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true">
+	    <youzhao.kuaifang.MyImageView
+	        android:id="@+id/wel_dots_fst"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/enable_true"/>
+	    <youzhao.kuaifang.MyImageView
+	        android:id="@+id/wel_dots_scd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/enable_false"
+	        android:layout_marginLeft="10dp"/>
+	    <youzhao.kuaifang.MyImageView
+	        android:id="@+id/wel_dots_thd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/enable_false"
+	        android:layout_marginLeft="10dp"/>
+	    <youzhao.kuaifang.MyImageView
+	        android:id="@+id/wel_dots_fth"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/enable_false"
+	        android:layout_marginLeft="10dp"/>
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youzhao.kuaifang.FamilyActivity" >
+	
+    <RelativeLayout
+        android:id="@+id/family_relativelayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/red">
+	    	<ImageView
+	    	    android:id="@+id/family_store_back"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_alignParentLeft="true"
+	    	    android:layout_centerVertical="true"
+	    	    android:src="@drawable/back"
+	    	    android:layout_marginLeft="20dp"/>
+	    	
+	    	<TextView
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="家庭常备"
+	    	    android:textColor="@color/white"
+	    	    android:textSize="18sp"
+	    	    android:layout_centerInParent="true"/>
+	</RelativeLayout>
+    
+	<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/family_relativelayout">
+        
+        <LinearLayout
+            android:id="@+id/family_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/red">
+            
+            <ImageView
+                android:id="@+id/family_store_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_empty"/>
+                        
+            <youzhao.kuaifang.mywidget.MyGridView
+                android:id="@+id/family_store_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"/>
+        </LinearLayout>
+    </ScrollView>
+    
+	
+
+</RelativeLayout>

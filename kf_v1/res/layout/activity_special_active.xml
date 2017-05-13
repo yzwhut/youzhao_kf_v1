@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youzhao.kuaifang.SpecialActiveActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/special_top_relativelayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/red">
+	    	<ImageView
+	    	    android:id="@+id/special_back"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_alignParentLeft="true"
+	    	    android:layout_centerVertical="true"
+	    	    android:src="@drawable/back"
+	    	    android:layout_marginLeft="20dp"/>
+	    	
+	    	<TextView
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="特价活动"
+	    	    android:textColor="@color/white"
+	    	    android:textSize="18sp"
+	    	    android:layout_centerInParent="true"/>
+	</RelativeLayout>
+
+	<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/special_top_relativelayout">
+        
+        <LinearLayout
+            android:id="@+id/special_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/red">
+            
+            <ImageView
+                android:id="@+id/special_active_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_empty"/>
+                        
+            <youzhao.kuaifang.mywidget.MyGridView
+                android:id="@+id/special_spacial_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+                android:layout_marginTop="10dp"
+	    	    android:horizontalSpacing="6dp"/>
+            
+            <ImageView
+                android:id="@+id/special_image_season_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_empty"/>
+            
+            <youzhao.kuaifang.mywidget.MyGridView
+                android:id="@+id/special_season_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+                android:layout_marginTop="10dp"
+	    	    android:horizontalSpacing="6dp"/>
+            
+            <ImageView
+                android:id="@+id/special_image_brands_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_empty"/>
+            
+            <youzhao.kuaifang.mywidget.MyGridView
+                android:id="@+id/special_brands_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+	    	    android:horizontalSpacing="6dp"
+	    	    android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/red"/>
+        </LinearLayout>
+    </ScrollView>
+    
+	
+
+</RelativeLayout>

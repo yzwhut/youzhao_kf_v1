@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="youzhao.kuaifang.OrderOfWaitToPayActivity" >
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red">
+        <ImageView
+            android:id="@+id/order_of_wait_to_pay_activity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待付款订单"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    
+   <!--   <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+        android:id="@+id/order_of_wait_to_pay_activity_listview"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"
+        android:divider="@color/gray"  
+        ptr:ptrDrawable="@drawable/loading_dialog_quan"   
+        ptr:ptrAnimationStyle="rotate"  
+        ptr:ptrHeaderBackground="#383838"  
+        ptr:ptrHeaderTextColor="#FFFFFF"/>    -->
+    
+    <ListView
+        android:id="@+id/order_of_wait_to_pay_activity_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray"
+        android:dividerHeight="0.5dp"/>
+    
+    
+
+</LinearLayout>
